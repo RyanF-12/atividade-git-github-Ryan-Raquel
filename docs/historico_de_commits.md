@@ -7,3 +7,7 @@
 # Commit 4: atualiza o README
 
 # Commit 5: Adiciona o código ao main.py
+
+# Commit 6: Cria uma branch de melhoria do arquivo main.py e dá um merge com a branch principal
+
+# Commit 7: Atualiza o readme e o hitórico de commits
