@@ -4,4 +4,4 @@
 
 # Como executar: Apenas execute o arquivo main.py
 
-# Comandos git usados: (git init -b main),  (git add .), (git status), (git commit -m), (git remote -v),
+# Comandos git usados: (git init -b main),  (git add .), (git status), (git commit -m), (git remote -v), (git push).
