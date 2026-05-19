@@ -1,11 +1,20 @@
-def calculadora():
-    print("=== CALCULADORA BÁSICA ===")
+def mostrar_menu():
+    print("\n=== CALCULADORA BÁSICA ===")
+    print("Operações disponíveis:")
+    print("[+] Soma")
+    print("[-] Subtração")
+    print("[*] Multiplicação")
+    print("[/] Divisão")
 
+
+def calculadora():
     while True:
+        mostrar_menu()
+
         try:
-            num1 = float(input("\n Digite o primeiro número: "))
-            operador = input("\n Digite a operação (+, -, *, /): ")
-            num2 = float(input("\n Digite o segundo número: "))
+            num1 = float(input("\nDigite o primeiro número: "))
+            operador = input("Digite a operação: ")
+            num2 = float(input("Digite o segundo número: "))
 
             if operador == "+":
                 resultado = num1 + num2
@@ -18,23 +27,24 @@ def calculadora():
 
             elif operador == "/":
                 if num2 == 0:
-                    print("\n Erro: divisão por zero não é permitida.")
+                    print("Erro: divisão por zero não é permitida.")
                     continue
                 resultado = num1 / num2
 
             else:
-                print("\n Operador inválido.")
+                print("Operador inválido.")
                 continue
 
-            print(f"\n Resultado: {resultado}")
+            print(f"\nResultado: {num1} {operador} {num2} = {resultado}")
 
-            continuar = input("\n Deseja fazer outra conta? (s/n): ").lower()
+            continuar = input("\nDeseja fazer outra conta? (s/n): ").lower()
 
             if continuar != "s":
-                print("\n Calculadora encerrada.")
+                print("\nCalculadora encerrada.")
                 break
 
         except ValueError:
-            print("\n Erro: digite apenas números válidos.")
+            print("Erro: digite apenas números válidos.")
+
 
 calculadora()
