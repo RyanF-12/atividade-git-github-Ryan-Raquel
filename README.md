@@ -1,0 +1,1 @@
+# Projeto proposto em sala como atividade para aprendermos git, github e cli
